@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Card UI Css</title>
+	<link rel="stylesheet" href="cardui.css">
+</head>
+<body>
+	<div class="card">
+		<div class="title"><i onClick="toggleMenu()"></i>Complete Card</div>
+
+		<div class="content">
+			<p>I can put severals lignes in there.</p>
+			<p>In fact i can put almost what ever I want</p>
+			<p>The more i put here, higher the card will be</p>
+		</div>
+
+		<ul id="my-menu" class="menu">
+			<li class="menu-item">Cool menu-item 1</li>
+			<li class="menu-item">Cool menu-item 2</li>
+			<li class="menu-item">Cool menu-item 3</li>
+		</ul>
+
+		<ul class="actions inline">
+			<li class="action">Share</li>
+			<li class="action">Translate</li>
+		</ul>
+
+		<div  id="test" class="media inline"></div>
+
+	</div>
+
+	<script>
+		function toggleMenu(){
+			document.getElementById("my-menu").className +=" active";
+		}
+	</script>
+	<style type="text/css">
+		body{ background-color: #ddd; }
+		#test{ background-image: url(media.png); }
+	</style>
+</body>
+</html>		
