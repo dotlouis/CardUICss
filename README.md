@@ -1,5 +1,5 @@
-CardUICss
-=========
+Card UI Css
+===========
 
 This css file aims to reproduce the Card UI for web components.This UI is known as the new Google design on Android
 
@@ -27,11 +27,11 @@ Inside this root element you can add 5 different other elements. Each one define
 
 Each of these elements can be used regardless of the others (exept for inline media. See the guidelines for further informations).
 
-Besides there is some contextual classes that can be added aside [ ]  and/or inside { } the previous ones.
+Besides there are some contextual classes that can be added aside [ ]  and/or inside { } the previous ones.
 
 * inline	: specify if the element is displayed horizontally or vertically
 * active	: specify if an element is active (visible)
-* i			: This is not a class but the \<i\> tag. It adds an icon to the element
+* i		: This is not a class but the \<i\> tag. It adds an icon to the element
 
 Summary
 =======
@@ -97,9 +97,10 @@ Of course you can also insert the picture with an \<img\> tag
 		<img src="picture.png"\>
 	</div>
 	
-But i recommand not to use this methods for 2 reasons:
-1. this does not work with inline media
-2. this will possibly stretch or shrink the original picture while using css background-image will nicely cover it
+But I recommand not to use this method for 2 reasons:
+
+1. This does not work with inline media
+2. This will possibly stretch or shrink the original picture. Instead, using css background-image will nicely cover it
 
 
 Inline media will put the picture to the right of the card. This is better for portrait oriented pictures.
@@ -152,7 +153,7 @@ CSS:
 	i{ background-image: url(my-sprite.png); }
 	i.search{ background-position: 0px 0px; }
 
-You may have to re-specify the background-size beacause it"s set to 16px by default.
+You may have to re-specify the background-size beacause it's set to 16px by default.
 
 Complete Example
 ================
@@ -198,16 +199,16 @@ GuideLines
 
 You can assemble the basic elements to get what you want but for aesthetic reasons you should follow theses rules:
 
-* You gest better media results with the background-image css property than with the <img> tag
+* You gest better media results with the background-image css property than with the \<img\> tag
 * Inline Media should always be at the end of the card markup
-* Inline Media does not support <img> inside of it
+* Inline Media does not support \<img\> inside of it
 * If you combine Media (normal) and Actions you should put the action markup at the end of the card
 * If you does not want any title but still want a icon just write nothing in the title text
 
 Licence
 =======
 
-There are no licence :P
+There is no licence :P
 Use this for what you want (yes yes even for commercial !!).
 Just try to link to this repo whenever you can. I know some students won't but it's no big deal ;)
 
